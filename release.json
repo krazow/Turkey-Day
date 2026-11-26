@@ -1,0 +1,36 @@
+{
+  "id": "turkeyday",
+  "name": "Thanksgiving at Weird People's House",
+  "description": "A mobile game about surviving Thanksgiving weekend with your partner's very weird family in Beaverton, OR.",
+  "site": ".",
+  "app": ".",
+  "prebuild": [
+    "python3 tools/build.py --check"
+  ],
+  "exclude": [".kit"],
+  "sw": "sw.js",
+  "version": [
+    {
+      "file": "index.html",
+      "pattern": "version:'([^']*)'"
+    }
+  ],
+  "android": {
+    "enabled": false
+  },
+  "windows": {
+    "enabled": true,
+    "port": 47851
+  },
+  "ios": {
+    "enabled": false
+  },
+  "macos": {
+    "enabled": false
+  },
+  "extras": {
+    "enabled": true,
+    "betaBuild": false,
+    "custom": "python3 tools/build-offline.py && cp offline/turkeyday-offline.html \"$OUT/TurkeyDay-offline.html\""
+  }
+}
