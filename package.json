@@ -1,0 +1,13 @@
+{
+  "name": "turkeyday",
+  "private": true,
+  "description": "Thanksgiving at Weird People's House: a mobile PWA game set in Beaverton, OR (built on the krazow framework)",
+  "scripts": {
+    "build": "python3 tools/build.py",
+    "test": "node tests/run.js",
+    "serve": "python3 -m http.server 8000"
+  },
+  "devDependencies": {
+    "playwright": "^1.47.0"
+  }
+}
