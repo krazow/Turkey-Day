@@ -53,7 +53,7 @@ function helpChapters(){
     ${hTip('A good weekend','Decent play earns a B. Skip nothing on Thursday and keep a little energy for the Games.')}`],
   ['more','Saving and more',`
     <ul><li>The game <b>saves itself</b>. ⚙️ Settings has save slots, a transfer code for moving a game to another device, sound and accessibility options.</li>
-    <li>Install the game to your home screen from the title screen. It plays offline.</li>
+    <li>Install the game to your home screen from the title screen. It plays offline. On an iPhone: <a href="install/ios.html">how to add it to your Home Screen</a>.</li>
     <li>Ideas or bugs? ${typeof feedbackModal==='function'?'<button class="linkbtn" onclick="feedbackModal()">💬 Send feedback</button>':'Send feedback'} from here, the title screen or ⚙️ Settings.</li></ul>
     <p>All the characters and events are made up. No real families were harmed.</p>`],
   ];
